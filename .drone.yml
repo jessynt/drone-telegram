@@ -1,0 +1,16 @@
+pipeline:
+  build:
+    image: golang:1.11
+    environment:
+    - CGO=0
+    - GOOS=linux
+    - GOARCH=amd64
+    - CGO_ENABLED=0
+    - CI=1
+    commands:
+    - make
+    - echo -n  $(date "+%Y%m%d")-$(make version) > .tags
+    - echo -n ",latest" >> .tags
+    when:
+      branch: master
+      event: [push, tag]
