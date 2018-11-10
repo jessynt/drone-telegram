@@ -25,3 +25,12 @@ pipeline:
     access_token: your access token
     chat_id: telegram chat id, you can obtain it from @chatid_echo_bot
 ```
+
+Example configuration using secrets:
+
+```
+pipeline:
+  telegram:
+    image: jessynt/drone-telegram
+    secrets: [telegram_access_token, telegram_chat_id]
+```
