@@ -1,5 +1,5 @@
-FROM alpine:3.8
+FROM scratch
 
-ADD bin/drone-telegram/bin/
+ADD bin/drone-telegram /bin/
 
 ENTRYPOINT ["/bin/drone-telegram"]
