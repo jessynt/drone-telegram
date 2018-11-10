@@ -4,6 +4,7 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/jessynt/drone-telegram.svg)](https://hub.docker.com/r/jessynt/drone-telegram/)
 [![Go Doc](https://godoc.org/github.com/jessynt/drone-telegram?status.svg)](http://godoc.org/github.com/jessynt/drone-telegram)
 [![Go Report](https://goreportcard.com/badge/github.com/jessynt/drone-telegram)](https://goreportcard.com/report/github.com/jessynt/drone-telegram)
+![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 Drone plugin for sending telegram notifications. 
 
