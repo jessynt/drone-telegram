@@ -14,3 +14,10 @@ pipeline:
     when:
       branch: master
       event: [push, tag]
+  publish:
+    image: plugins/docker
+    secrets: [ docker_username, docker_password]
+    repo: jessynt/drone-telegram
+    when:
+      branch: master
+      event: [push, tag]
