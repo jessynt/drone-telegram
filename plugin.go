@@ -49,7 +49,7 @@ func message(repo Repo, build Build) string {
 		build.Status,
 		repo.Owner,
 		repo.Name,
-		build.Commit,
+		build.Commit[:8],
 		build.Number,
 		build.Branch,
 		build.Author,
